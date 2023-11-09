@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "Raleway", sans-serif;
+}
+
+:root {
+  --azul-1: #003647;
+  --azul-2: #007296;
+  --azul-2-1: #007296b0;
+  --azul-3: #00A6DB;
+  --azul-3-1: #00A6DBB0;
+  --azul-4: #5CBCDB;
+  --azul-4-1: #5cbbdbb0;
+  --gris-1: #414141;
+  --gris-1-1: #414141b0;
+  --gris-2: #8b8b8b;
+  --gris-2-1: #8b8b8bb0;
+  --gris-2-2: #8b8b8b00;
+  --gris-3: #d3d3d3;
+  --gris-4: #f0ecec;
+  --blanco: #ffffff;
+  --negro: #000000;
+
+}
