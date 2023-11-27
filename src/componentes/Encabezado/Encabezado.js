@@ -46,12 +46,12 @@ function Encabezado() {
                         <li><a href="#inicio">Inicio</a></li>
                         <li><a href="#servicios">Servicios</a></li>
                         <li><a href="#nosotros">Nosotros</a></li>
-                        <li><a href="#clientes">Clientes</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
                 <div className='content-boton-menu' onClick={mostrarMenu}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16"><path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" /></svg>
                 </div>
                 <div className='content-menu-Movil' style={{ left: `${mostrarMenuMovil}vw` }}>
                     <div className='content-logo-movil'>
@@ -64,7 +64,7 @@ function Encabezado() {
                         <li onClick={mostrarMenu}><a href="#inicio">Inicio</a></li>
                         <li onClick={mostrarMenu}><a href="#servicios">Servicios</a></li>
                         <li onClick={mostrarMenu}><a href="#nosotros">Nosotros</a></li>
-                        <li onClick={mostrarMenu}><a href="#clientes">Clientes</a></li>
+                        <li onClick={mostrarMenu}><a href="#clientes">Proyectos</a></li>
                         <li onClick={mostrarMenu}><a href="#contacto">Contacto</a></li>
                     </div>
                     <div className='content-social-movil'>
@@ -125,8 +125,9 @@ const EncabezadoContainer = styled.header`
                         color: #727272;
                         transition: all .4s;
                         text-decoration: none;
+                        font-weight: bold;
                         &:hover{
-                            color: #323333;
+                            color: #007296;
                         }
                     }
                     list-style: none;
@@ -147,7 +148,7 @@ const EncabezadoContainer = styled.header`
 
 
             @media only screen and (max-width: 1024px) {
-               display: none;
+                display: none;
             }
         }
         //ARRANCA EL MENU RESPONSIVE -1024px
@@ -206,6 +207,9 @@ const EncabezadoContainer = styled.header`
                         color: #727272;
                         transition: all .4s;
                         text-decoration: none;
+                        &:hover{
+                            color: #007296;
+                        }
                     }
                 }
 
