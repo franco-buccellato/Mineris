@@ -52,6 +52,7 @@ export function SeccionProyectos() {
                             tituloProyecto={"DOC ONLINE (En Desarrollo)"}
                             descripcionProyecto={"Diseñamos y desarrollamos una plataforma integral que simplifica el proceso de solicitud de turnos médicos y trámites REPROCANN. Los usuarios finales pueden registrarse fácilmente, completar formularios y solicitar turnos médicos de manera eficiente. Para mejorar la experiencia del usuario, ofrecemos una interfaz intuitiva y fluida. En el lado administrativo, la plataforma capacita a los administradores para gestionar usuarios, turnos, seguimientos y configuraciones de manera centralizada."}
                             orden={"none"}
+                            link={'https://front-doc-online.vercel.app/'}
                         />
 
                         <Proyectos
@@ -59,13 +60,14 @@ export function SeccionProyectos() {
                             tituloProyecto={"AMIDA GROUP"}
                             descripcionProyecto={"Página web sencilla pero impactante, diseñada y desarrollada específicamente para empresa de turismo y eventos corporativos. Con un enfoque intuitivo y elegante, hemos incorporado un formulario de contacto para simplificar la conexión entre tu negocio y tus clientes potenciales."}
                             orden={"reverso"}
+                            link={'https://www.amidagroup.com.ar/'}
                         />
                         <Proyectos
                             imgCard={Foster}
                             tituloProyecto={"FOSTER'S"}
                             descripcionProyecto={"Diseño y Desarrollo de catálogo web, ABM de usuarios, carrito de compras, envío de ordenes vía e-mail. Se realizo un CRUD MERN (Mongo DB, Express JS, React JS y Node JS) implementado en Azure."}
-                            codigoProyecto={"https://www.youtube.com/watch?v=RELxs6kKrbM"}
                             orden={"reverso"}
+                            link={'http://www.tensoresfosters.com.ar/'}
                         />
 
                         {/* LOS PROYECTOS QUE VAN ACA NO SE VAN A MOSTRAR PRINCIPALMENTE */}
@@ -75,15 +77,15 @@ export function SeccionProyectos() {
                                     imgCard={Delcargo}
                                     tituloProyecto={"DEAL CARGO (En Desarrollo)"}
                                     descripcionProyecto={"Web diseñada y desarrollada para empresa de comercio exterior. Desde un formulario de contacto que simplifica la comunicación hasta un acceso directo a sus redes sociales, ofrece una experiencia de usuario fluida y eficiente. Con un enfoque centrado en la calidad y la funcionalidad, está web está diseñada para destacar los aspectos más importantes de tu empresa, proporcionando a tus visitantes una visión completa y atractiva de tus servicios y logros."}
-                                    codigoProyecto={"https://www.youtube.com/watch?v=RELxs6kKrbM"}
                                     orden={"none"}
+                                    link={'https://dealcargo-front.vercel.app/'}
                                 />
                                 <Proyectos
                                     imgCard={Meca}
                                     tituloProyecto={"MECA"}
                                     descripcionProyecto={"Diseño y Desarrollo de página web, con distintas secciones, formulario de contacto, accesos rápidos a redes sociales, últimas publicaciones de linkedin embebidas."}
-                                    codigoProyecto={"https://www.youtube.com/watch?v=RELxs6kKrbM"}
                                     orden={"none"}
+                                    link={'https://www.mecaelectromecanica.com.ar/'}
                                 />
                             </div>
                         )}

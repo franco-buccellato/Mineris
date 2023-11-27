@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 
-export function Proyectos({ imgCard, tituloProyecto, descripcionProyecto,stackProyecto1, stackProyecto2, stackProyecto3, stackProyecto4,codigoProyecto, orden}) {
+export function Proyectos({ imgCard, tituloProyecto, descripcionProyecto, orden, link}) {
 
     const estiloPorDefecto = {
         display: 'flex',
@@ -19,10 +19,9 @@ export function Proyectos({ imgCard, tituloProyecto, descripcionProyecto,stackPr
     return (
         <>
             <CardContainer style={estiloFinal}>
-                <div className='container-img'>
+                <a href={link} className='container-img' target='__blank'>
                     <img src={imgCard} alt="imagen web" loading="lazy"/>
-                
-                </div>
+                </a>
                 <div className='container-text'>
                     <h5>{tituloProyecto}</h5>
                     <p>{descripcionProyecto}</p>
