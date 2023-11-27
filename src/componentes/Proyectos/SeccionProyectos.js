@@ -5,7 +5,7 @@ import DocOnline from '../../imagenes/Doc. Online.png'
 import Amida from '../../imagenes/Amida.png'
 import Delcargo from '../../imagenes/Delcargo.png'
 import Foster from '../../imagenes/Foster.png'
-import Meca from '../../imagenes/Meca.png'
+import Meca from '../../imagenes/Meca.webp'
 import { motion } from "framer-motion"
 
 

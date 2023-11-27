@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import stikerFran from '../../imagenes/stiker Franco.png'
-import stikerAdri from '../../imagenes/stiker Adrian.png'
-import stikerNico from '../../imagenes/stiker Nico.png'
-import videoNosotros from '../../imagenes/nosotros-robot.png'
+import stikerFran from '../../imagenes/stiker-Franco.webp'
+import stikerAdri from '../../imagenes/stiker-Adrian.webp'
+import stikerNico from '../../imagenes/stiker-Nico.webp'
+import videoNosotros from '../../imagenes/nosotros-robot.webp'
 import { motion } from "framer-motion"
 
 
