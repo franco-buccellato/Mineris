@@ -16,20 +16,20 @@ function Footer() {
                 <div className='content'>
 
                     <div className='container-items'>
-                        <div className='info'>
+                        <ul className='info'>
                             <li>
                                 <ion-icon name="locate-outline" size='large'></ion-icon>
-                                <a href='https://www.google.com/maps/place/Villa+Bosch,+Provincia+de+Buenos+Aires/data=!4m2!3m1!1s0x95bcb9b8f8d39399:0xaf05e58ee3f95a10?sa=X&ved=2ahUKEwiGyIrXst2CAxXfr5UCHQmqASEQ8gF6BAgKEAA' target='__blank'>Villa Bosch, Buenos Aires</a>
+                                <a aria-label='Ubicación' href='https://www.google.com/maps/place/Villa+Bosch,+Provincia+de+Buenos+Aires/data=!4m2!3m1!1s0x95bcb9b8f8d39399:0xaf05e58ee3f95a10?sa=X&ved=2ahUKEwiGyIrXst2CAxXfr5UCHQmqASEQ8gF6BAgKEAA' target='__blank'>Villa Bosch, Buenos Aires</a>
                             </li>
                             <li>
                                 <ion-icon name="logo-whatsapp" size='large'></ion-icon>
-                                <a href='https://api.whatsapp.com/send?phone=541133235987&text=Hola+vi+en+la+pagina+sus+servicios' target='__blank'>+054 11 3323-5987</a>
+                                <a aria-label='Wp' href='https://api.whatsapp.com/send?phone=541133235987&text=Hola+vi+en+la+pagina+sus+servicios' target='__blank'>+054 11 3323-5987</a>
                             </li>
                             <li>
                             <ion-icon name="mail-outline" size='large'></ion-icon>
-                                <a href='info@mineris.com.ar' target='__blank'>info@mineris.com.ar</a>
+                                <a aria-label='mail' href='info@mineris.com.ar' target='__blank'>info@mineris.com.ar</a>
                             </li>
-                        </div>
+                        </ul>
                         <div className='lema'>
                             <span>El tiempo es nuestro activo más valioso.</span>
                             <span>Sin embargo, las empresas tienden a desperdiciarlo en lugar de invertirlo.</span>

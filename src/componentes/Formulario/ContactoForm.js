@@ -54,7 +54,7 @@ export const ContactoForm = () => {
                 </div>
                 <fieldset className='container-mensaje'>
                     <label>Contanos sobre tu proyecto:</label>
-                    <textarea maxLength="500" name='message' type='email' id='consulta' required />
+                    <textarea maxLength="500" name='message' type='email' id='consulta' placeholder='Escriba su consulta aquí...' required />
                 </fieldset>
                 <ReCAPTCHA className="captcha"
                         sitekey="6Ld61E4mAAAAAAGw68YoZayXagefAZsS_gq_STk4"
