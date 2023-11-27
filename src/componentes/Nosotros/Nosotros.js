@@ -16,7 +16,7 @@ function Nosotros() {
 
             <NosotrosContainer id='nosotros'>
                 <div className='content'>
-                    <motion.div
+{/*                     <motion.div
                         initial={{ opacity: 0, y: -120 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: .8 }}
@@ -24,7 +24,7 @@ function Nosotros() {
                         className='frase-container'
                     >
                         <span>Somos tu socio confiable en el mundo del desarrollo de aplicaciones web. En nuestra startup, combinamos la creatividad con la tecnología de vanguardia para dar vida a tus ideas digitales.</span>
-                    </motion.div>
+                    </motion.div> */}
                     <div className='main-container'>
                         <motion.div
                             initial={{ opacity: 0, x: 120 }}
@@ -122,6 +122,7 @@ export default Nosotros;
 
 const NosotrosContainer = styled.section`
     height: 100vh;
+    padding-top: 4vh;
     @media only screen and (max-width: 1024px) {
         height: auto;
     }
