@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import logo from '../../imagenes/isologotipo-mineris.png'
-import logoMovil from '../../imagenes/logotipo-mineris-movil.png'
+import logo from '../../imagenes/isologotipo-mineris.webp'
+import logoMovil from '../../imagenes/logotipo-mineris-movil.webp'
 import { useEffect, useState } from 'react';
 
 

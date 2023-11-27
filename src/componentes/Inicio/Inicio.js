@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import fondoInicio from '../../imagenes/fondo-landing-mineris.png'
+import fondoInicio from '../../imagenes/fondo-landing-mineris.webp'
 
 
 function Inicio() {

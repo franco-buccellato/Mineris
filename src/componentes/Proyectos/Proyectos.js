@@ -20,7 +20,7 @@ export function Proyectos({ imgCard, tituloProyecto, descripcionProyecto,stackPr
         <>
             <CardContainer style={estiloFinal}>
                 <div className='container-img'>
-                    <img src={imgCard} alt="imagen web" />
+                    <img src={imgCard} alt="imagen web" loading="lazy"/>
                 
                 </div>
                 <div className='container-text'>

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import videoServicios from '../../imagenes/servicios-robot.png'
+import videoServicios from '../../imagenes/servicios-robot.webp'
 import { motion } from "framer-motion"
 
 function Servicios() {

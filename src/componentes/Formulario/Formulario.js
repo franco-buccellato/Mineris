@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import videoFormulario from '../../imagenes/formulario-robot.png'
+import videoFormulario from '../../imagenes/formulario-robot.webp'
 import { ContactoForm } from './ContactoForm';
 import { motion } from "framer-motion"
 

@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { Proyectos } from './Proyectos'
-import DocOnline from '../../imagenes/Doc. Online.png'
-import Amida from '../../imagenes/Amida.png'
-import Delcargo from '../../imagenes/Delcargo.png'
-import Foster from '../../imagenes/Foster.png'
-import Meca from '../../imagenes/Meca.png'
+import DocOnline from '../../imagenes/Doc.-Online.webp'
+import Amida from '../../imagenes/amida.webp'
+import Delcargo from '../../imagenes/delcargo.webp'
+import Foster from '../../imagenes/Foster.webp'
+import Meca from '../../imagenes/Meca.webp'
 import { motion } from "framer-motion"
 
 
@@ -142,15 +142,15 @@ const ContainerProyectos = styled.div`
             .buttonMostrarProyectos{
                 width: 16rem;
                 margin: auto 0 auto auto;
-                border: 1px solid #5CBCDB;
+                border: 1px solid #007296;
                 border-radius: 10px;
-                color: #5CBCDB;
+                color: #007296;
                 padding: 6px 12px;
                 background-color: transparent;
                 transition: .4s;
                 &:hover{
-                    border: 1px solid #007296;
-                    color: #007296;
+                    background-color:  #007296;
+                    color: #ffff;
                 }
             }
         }
