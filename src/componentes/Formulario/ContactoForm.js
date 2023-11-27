@@ -1,6 +1,8 @@
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import styled from 'styled-components';
+import ApiKey from '../ApiKey';
+import ReCAPTCHA from "react-google-recaptcha";
 
 export const ContactoForm = () => {
 
@@ -12,17 +14,31 @@ export const ContactoForm = () => {
         setBotonEnviar("¡Formulario enviado!");
     };
 
+    const onChange = () => {
+        console.log('Captcha válido!');
+        document.getElementById('botonEnvio').removeAttribute('disabled');
+        document.getElementById('botonEnvio').style.visibility = 'visible';
+    }
+
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        const serviceId = "service_g52sx08";
-        const templateId = "template_t1zmqul"
-
-        const apiKey = "pIsAumB7OOixlRj9p";
-
-        emailjs.sendForm(serviceId, templateId, refForm.current, apiKey)
-            .then(result => cambiarTextoBoton())
-            .catch(error => console.log(error))
+        emailjs.sendForm(
+            ApiKey.SERVICE_ID,
+            ApiKey.TEMPLATE_ID,
+            refForm.current,
+            ApiKey.USER_ID
+        ).then(
+            (result) => {
+                cambiarTextoBoton();
+                document.getElementById("usuarioNombre").value = '';
+                document.getElementById("usuarioMail").value = '';
+                document.getElementById("consulta").value = '';
+            },
+            (error) => {
+                console.log(error);
+            }
+        );
     }
 
     return (
@@ -30,30 +46,27 @@ export const ContactoForm = () => {
             <form ref={refForm} action='' onSubmit={handleSubmit}>
                 <div className='container-nombreYmail'>
                     <fieldset>
-                        <input name='username' type='text' placeholder='Nombre' required />
+                        <input name='user_name' type='text' placeholder='Nombre' id='usuarioNombre' required />
                     </fieldset>
-
                     <fieldset>
-                        <input name='email' type='email' placeholder='Email' required />
+                        <input name='user_email' type='email' placeholder='Email' id='usuarioMail' required />
                     </fieldset>
                 </div>
-
-
                 <fieldset className='container-mensaje'>
                     <label>Contanos sobre tu proyecto:</label>
-                    <textarea maxLength="500" name='mensaje' type='email' required />
+                    <textarea maxLength="500" name='message' type='email' id='consulta' required />
                 </fieldset>
-
+                <ReCAPTCHA className="captcha"
+                        sitekey="6Ld61E4mAAAAAAGw68YoZayXagefAZsS_gq_STk4"
+                        onChange={onChange}
+                />
                 <div className='container-buttonEnviarFormulario'>
-                    <button className='buttonEnviarFormulario'>{botonEnviar}</button>
+                    <button className='buttonEnviarFormulario' id='botonEnvio' disabled>{botonEnviar}</button>
                 </div>
-
             </form>
         </ContainerForm>
-
     )
 }
-
 
 const ContainerForm = styled.section`
     width: 70%;
@@ -123,6 +136,7 @@ const ContainerForm = styled.section`
             justify-content: end;
         }
         .buttonEnviarFormulario{
+            visibility: hidden;
             background-color: transparent;
             border: 1px solid #007296;
             color: #007296;

@@ -21,7 +21,7 @@ function Formulario() {
                         className='info-container'
                     >
 
-                        <h3>El Primer Paso  <br /> Empieza acá..</h3>
+                        <h3>El primer paso empieza acá..</h3>
                         <ContactoForm />
 
                     </motion.div>
@@ -54,6 +54,7 @@ function Formulario() {
 export default Formulario;
 
 const FormularioContainer = styled.section`
+    padding-top:4vh;
     @media only screen and (max-width: 1024px) {
         height: auto;
     }
