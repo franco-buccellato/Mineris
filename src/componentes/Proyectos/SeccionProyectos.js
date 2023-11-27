@@ -34,7 +34,7 @@ export function SeccionProyectos() {
                 <div className='circuloBorde'></div>
             </ContenedorCirculo2>
 
-            <ContainerProyectos id='clientes'>
+            <ContainerProyectos id='proyectos'>
                 <div className='content'>
                     <motion.h3
                         initial={{ opacity: 0, x: -120 }}
@@ -56,30 +56,28 @@ export function SeccionProyectos() {
 
                         <Proyectos
                             imgCard={Amida}
-                            tituloProyecto={"AMIDA GROUP (En Desarrollo)"}
+                            tituloProyecto={"AMIDA GROUP"}
                             descripcionProyecto={"Página web sencilla pero impactante, diseñada y desarrollada específicamente para empresa de turismo y eventos corporativos. Con un enfoque intuitivo y elegante, hemos incorporado un formulario de contacto para simplificar la conexión entre tu negocio y tus clientes potenciales."}
                             orden={"reverso"}
                         />
-
                         <Proyectos
-                            imgCard={Delcargo}
-                            tituloProyecto={"DEAL CARGO"}
-                            descripcionProyecto={"Web diseñada y desarrollada para empresa de comercio exterior. Desde un formulario de contacto que simplifica la comunicación hasta un acceso directo a sus redes sociales, ofrece una experiencia de usuario fluida y eficiente. Con un enfoque centrado en la calidad y la funcionalidad, está web está diseñada para destacar los aspectos más importantes de tu empresa, proporcionando a tus visitantes una visión completa y atractiva de tus servicios y logros."}
+                            imgCard={Foster}
+                            tituloProyecto={"FOSTER'S"}
+                            descripcionProyecto={"Diseño y Desarrollo de catálogo web, ABM de usuarios, carrito de compras, envío de ordenes vía e-mail. Se realizo un CRUD MERN (Mongo DB, Express JS, React JS y Node JS) implementado en Azure."}
                             codigoProyecto={"https://www.youtube.com/watch?v=RELxs6kKrbM"}
-                            orden={"none"}
+                            orden={"reverso"}
                         />
 
                         {/* LOS PROYECTOS QUE VAN ACA NO SE VAN A MOSTRAR PRINCIPALMENTE */}
                         {mostrarMasProyectos && (
                             <div className={`cards-container ${transicionProyectos ? 'transicion-entrada' : 'sin-transicion'}`}>
                                 <Proyectos
-                                    imgCard={Foster}
-                                    tituloProyecto={"FOSTER'S"}
-                                    descripcionProyecto={"Diseño y Desarrollo de catálogo web, ABM de usuarios, carrito de compras, envío de ordenes vía e-mail. Se realizo un CRUD MERN (Mongo DB, Express JS, React JS y Node JS) implementado en Azure."}
+                                    imgCard={Delcargo}
+                                    tituloProyecto={"DEAL CARGO (En Desarrollo)"}
+                                    descripcionProyecto={"Web diseñada y desarrollada para empresa de comercio exterior. Desde un formulario de contacto que simplifica la comunicación hasta un acceso directo a sus redes sociales, ofrece una experiencia de usuario fluida y eficiente. Con un enfoque centrado en la calidad y la funcionalidad, está web está diseñada para destacar los aspectos más importantes de tu empresa, proporcionando a tus visitantes una visión completa y atractiva de tus servicios y logros."}
                                     codigoProyecto={"https://www.youtube.com/watch?v=RELxs6kKrbM"}
-                                    orden={"reverso"}
+                                    orden={"none"}
                                 />
-
                                 <Proyectos
                                     imgCard={Meca}
                                     tituloProyecto={"MECA"}
@@ -106,6 +104,7 @@ export function SeccionProyectos() {
 
 const ContainerProyectos = styled.div`
     z-index: 2;
+    padding-top: 4vh;
     .content{
         width: 70%;
         margin: 6rem auto 0 auto;

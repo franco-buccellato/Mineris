@@ -33,7 +33,8 @@ export default Inicio;
 const InicioContainer = styled.section`
     width: 100%;
     height: 90vh;
-    margin-top: 10vh;
+    margin-top: 6vh;
+    padding-top: 4vh;
 
     .content{
         width: 70%;

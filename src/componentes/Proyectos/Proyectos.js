@@ -14,7 +14,7 @@ export function Proyectos({ imgCard, tituloProyecto, descripcionProyecto,stackPr
         flexDirection: 'row-reverse', 
     }
 
-    const estiloFinal = orden == 'reverso' ? estiloReverso : estiloPorDefecto;
+    const estiloFinal = orden === 'reverso' ? estiloReverso : estiloPorDefecto;
 
     return (
         <>
@@ -23,13 +23,10 @@ export function Proyectos({ imgCard, tituloProyecto, descripcionProyecto,stackPr
                     <img src={imgCard} alt="imagen web" />
                 
                 </div>
-
                 <div className='container-text'>
                     <h5>{tituloProyecto}</h5>
                     <p>{descripcionProyecto}</p>
-
                 </div>
-
             </CardContainer>
         </>
     )

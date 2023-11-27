@@ -24,43 +24,38 @@ function Servicios() {
                         className='info-container'
                     >
 
-                        <h3>Descubrí <br /> Nuestros servicios.</h3>
-
+                        <h3>Descubrí nuestros servicios.</h3>
                         <div className='items-container'>
-
                             <div className='item'>
                                 <div className='item-icon'>
-                                    <i className="fa fa-map-marker"></i>
+                                    <ion-icon name="code-outline" size="large"></ion-icon>
                                 </div>
                                 <div className='item-text'>
                                     <h5>Desarrollo de Aplicaciones Web</h5>
                                     <p>Nos especializamos en el desarrollo de aplicaciones web innovadoras y funcionales que se adaptan a las necesidades específicas de tu negocio. Desde el diseño inicial hasta la implementación final, trabajamos de la mano contigo para asegurarnos de que cada detalle de tu visión se refleje en la aplicación.</p>
                                 </div>
                             </div>
-
                             <div className='item'>
                                 <div className='item-icon'>
-                                    <i className="fa fa-map-marker"></i>
+                                    <ion-icon name="analytics-outline" size="large"></ion-icon>
                                 </div>
                                 <div className='item-text'>
                                     <h5>Optimización y Mantenimiento</h5>
                                     <p>Sabemos que el lanzamiento de tu sitio web es solo el comienzo. Es por eso que ofrecemos servicios integrales de optimización y mantenimiento para garantizar que tu plataforma funcione de manera óptima en todo momento.</p>
                                 </div>
                             </div>
-
                             <div className='item'>
                                 <div className='item-icon'>
-                                    <i className="fa fa-map-marker"></i>
+                                    <ion-icon name="construct-outline" size="large"></ion-icon>
                                 </div>
                                 <div className='item-text'>
                                     <h5>Consultoría Tecnológica</h5>
                                     <p>Sabemos que el lanzamiento de tu sitio web es solo el comienzo. Es por eso que ofrecemos servicios integrales de optimización y mantenimiento para garantizar que tu plataforma funcione de manera óptima en todo momento.</p>
                                 </div>
                             </div>
-
                             <div className='item'>
                                 <div className='item-icon'>
-                                    <i className="fa fa-map-marker"></i>
+                                    <ion-icon name="settings-outline" size="large"></ion-icon>
                                 </div>
                                 <div className='item-text'>
                                     <h5>Automatización de Procesos</h5>
@@ -82,12 +77,6 @@ function Servicios() {
                         />
                     </motion.div>
                 </div>
-
-
-
-
-
-
             </ServiciosContainer>
         </>
 
@@ -98,6 +87,7 @@ export default Servicios;
 
 const ServiciosContainer = styled.section`
     height: 100vh;
+    padding-top: 4vh;
     @media only screen and (max-width: 1024px) {
         height: auto;
     }
