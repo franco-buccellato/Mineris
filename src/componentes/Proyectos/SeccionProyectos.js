@@ -46,15 +46,20 @@ export function SeccionProyectos() {
                         Últimos Proyectos
                     </motion.h3>
                     <div className='cards-container'>
-
                         <Proyectos
                             imgCard={DocOnline}
-                            tituloProyecto={"DOC ONLINE (En Desarrollo)"}
+                            tituloProyecto={"DOC ONLINE"}
                             descripcionProyecto={"Diseñamos y desarrollamos una plataforma integral que simplifica el proceso de solicitud de turnos médicos y trámites REPROCANN. Los usuarios finales pueden registrarse fácilmente, completar formularios y solicitar turnos médicos de manera eficiente. Para mejorar la experiencia del usuario, ofrecemos una interfaz intuitiva y fluida. En el lado administrativo, la plataforma capacita a los administradores para gestionar usuarios, turnos, seguimientos y configuraciones de manera centralizada."}
                             orden={"none"}
                             link={'https://front-doc-online.vercel.app/'}
                         />
-
+                        <Proyectos
+                            imgCard={Delcargo}
+                            tituloProyecto={"DEAL CARGO"}
+                            descripcionProyecto={"Web diseñada y desarrollada para empresa de comercio exterior. Desde un formulario de contacto que simplifica la comunicación hasta un acceso directo a sus redes sociales, ofrece una experiencia de usuario fluida y eficiente. Con un enfoque centrado en la calidad y la funcionalidad, está web está diseñada para destacar los aspectos más importantes de tu empresa, proporcionando a tus visitantes una visión completa y atractiva de tus servicios y logros."}
+                            orden={"none"}
+                            link={'https://deal-cargo.vercel.app/'}
+                        />
                         <Proyectos
                             imgCard={Amida}
                             tituloProyecto={"AMIDA GROUP"}
@@ -62,24 +67,9 @@ export function SeccionProyectos() {
                             orden={"reverso"}
                             link={'https://www.amidagroup.com.ar/'}
                         />
-                        <Proyectos
-                            imgCard={Foster}
-                            tituloProyecto={"FOSTER'S"}
-                            descripcionProyecto={"Diseño y Desarrollo de catálogo web, ABM de usuarios, carrito de compras, envío de ordenes vía e-mail. Se realizo un CRUD MERN (Mongo DB, Express JS, React JS y Node JS) implementado en Azure."}
-                            orden={"reverso"}
-                            link={'http://www.tensoresfosters.com.ar/'}
-                        />
-
                         {/* LOS PROYECTOS QUE VAN ACA NO SE VAN A MOSTRAR PRINCIPALMENTE */}
                         {mostrarMasProyectos && (
                             <div className={`cards-container ${transicionProyectos ? 'transicion-entrada' : 'sin-transicion'}`}>
-                                <Proyectos
-                                    imgCard={Delcargo}
-                                    tituloProyecto={"DEAL CARGO (En Desarrollo)"}
-                                    descripcionProyecto={"Web diseñada y desarrollada para empresa de comercio exterior. Desde un formulario de contacto que simplifica la comunicación hasta un acceso directo a sus redes sociales, ofrece una experiencia de usuario fluida y eficiente. Con un enfoque centrado en la calidad y la funcionalidad, está web está diseñada para destacar los aspectos más importantes de tu empresa, proporcionando a tus visitantes una visión completa y atractiva de tus servicios y logros."}
-                                    orden={"none"}
-                                    link={'https://dealcargo-front.vercel.app/'}
-                                />
                                 <Proyectos
                                     imgCard={Meca}
                                     tituloProyecto={"MECA"}
@@ -87,10 +77,15 @@ export function SeccionProyectos() {
                                     orden={"none"}
                                     link={'https://www.mecaelectromecanica.com.ar/'}
                                 />
+                                <Proyectos
+                                    imgCard={Foster}
+                                    tituloProyecto={"FOSTER'S"}
+                                    descripcionProyecto={"Diseño y Desarrollo de catálogo web, ABM de usuarios, carrito de compras, envío de ordenes vía e-mail. Se realizo un CRUD MERN (Mongo DB, Express JS, React JS y Node JS) implementado en Azure."}
+                                    orden={"reverso"}
+                                    link={'http://www.tensoresfosters.com.ar/'}
+                                />
                             </div>
                         )}
-
-
                         <button className='buttonMostrarProyectos' onClick={cambiarMostrarProyectos}>
                             {mostrarMasProyectos ? 'Ocultar Proyectos' : 'Mostrar más Proyectos'}
                         </button>
